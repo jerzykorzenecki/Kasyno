@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Gry Stołowe w Kasynie</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #002b36, #000);
+            color: white;
+            font-family: Georgia, serif;
+            margin: 0;
+        }
+        header {
+            background: linear-gradient(to right, #00cc44, #004d00);
+            padding: 20px;
+            text-align: center;
+            animation: glow-green 2s infinite alternate;
+        }
+        @keyframes glow-green {
+            from { text-shadow: 0 0 5px #66ff66; }
+            to { text-shadow: 0 0 20px #00ff00; }
+        }
+        nav {
+            text-align: center;
+            background: #111;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid gold;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: gold;
+            color: black;
+            box-shadow: 0 0 20px gold;
+        }
+        ul {
+            width: 60%;
+            margin: auto;
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+        img:hover {
+            transform: rotate(3deg) scale(1.05);
+            box-shadow: 0 0 25px lime;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🃏 Gry Stołowe</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="automaty.html">Automaty</a>
+        <a href="gry.html">Gry Stołowe</a>
+    </nav>
+
+    <h2 style="text-align:center;">Najpopularniejsze gry stołowe w kasynach</h2>
+    <p style="text-align:center;">Kasyna oferują szeroki wybór <b>gier karcianych i ruletki</b>, które wymagają nie tylko szczęścia, ale i strategii.</p>
+
+    <ul>
+        <li><b>Poker</b> – gra strategiczna, w której liczy się umiejętność blefowania.</li>
+        <li><b>Blackjack</b> – gra karciana, w której celem jest uzyskanie 21 punktów.</li>
+        <li><b>Ruletka</b> – klasyczna gra losowa z obracającym się kołem.</li>
+        <li><b>Baccarat</b> – popularna wśród graczy high-roller.</li>
+    </ul>
+
+    <img src="ruletka.jpg" alt="Ruletka" width="500">
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>KASYNO ONLINE</title>
+    <style>
+        body {
+            background: radial-gradient(circle at center, #0b1a2e, #000);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header {
+            background: linear-gradient(to right, #c70039, #ff5733);
+            padding: 20px;
+            text-align: center;
+            animation: neon-glow 2s infinite alternate;
+        }
+        @keyframes neon-glow {
+            from { text-shadow: 0 0 5px #ffb700, 0 0 10px #ff4500; }
+            to { text-shadow: 0 0 20px #ffb700, 0 0 30px #ff4500; }
+        }
+        nav {
+            text-align: center;
+            background: #111;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid gold;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: gold;
+            color: black;
+            box-shadow: 0 0 20px gold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            border-radius: 15px;
+            box-shadow: 0 0 20px black;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px gold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎰 Kasyno Online – Świat Gier</h1>
+        <p><b>Automaty, ruletka, poker i wiele więcej!</b></p>
+    </header>
+
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="automaty.html">Automaty</a>
+        <a href="gry.html">Gry Stołowe</a>
+    </nav>
+
+    <div class="content">
+        <h2>Witamy w świecie kasyna!</h2>
+        <p>Kasyno to miejsce, gdzie spotykają się <b>emocje, strategia i szczęście</b>. 
+        Na naszej stronie znajdziesz informacje o <i>najpopularniejszych maszynach i grach stołowych</i>.</p>
+        <img src="dlaczego-kasyno-zawsze-wygrywa-1140x570.WEBP" alt="Kasyno automaty" width="500">
+	</div>
+</body>
+</html>
