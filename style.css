@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0a0a0a 0%, #000 100%);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    text-shadow: 0 0 10px #00eaff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav {
+    background: rgba(0,0,0,0.8);
+    padding: 15px;
+    border-top: 1px solid #00eaff;
+    border-bottom: 1px solid #00eaff;
+    box-shadow: 0 0 10px cyan;
+}
+
+nav a {
+    color: cyan;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ffaa;
+    text-shadow: 0 0 10px #00ffaa;
+}
+
+main {
+    margin-top: 50px;
+    animation: slideIn 1s forwards;
+    opacity: 0;
+}
+
+footer {
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    font-size: 14px;
+    color: #aaa;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes slideIn {
+    from {opacity: 0; transform: translateY(50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.05), rgba(0,0,0,0.9));
+    z-index: -1;
+    animation: lightPulse 5s infinite alternate;
+}
+
+@keyframes lightPulse {
+    from {opacity: 0.3;}
+    to {opacity: 0.8;}
+}
